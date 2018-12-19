@@ -1,0 +1,9 @@
+<view class="me">
+  <view class="me__info">
+    <image class="me__info__avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text  class="me__info__name">{{userInfo.nickName}}</text>
+    <view class='me__info__count'>
+      aa
+    </view>
+  </view>
+</view>

@@ -1,12 +1,32 @@
 {
   "pages":[
+    
+    "pages/new/new",
+    "pages/me/me",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "猪猪抽奖",
     "navigationBarTextStyle":"black"
-  }
+  },
+    "tabBar": {
+      "backgroundColor": "#fff",
+      "list": [
+        {
+          "pagePath": "pages/new/new",
+          "text": "建新",
+          "iconPath": "images/bar-icon/new-product.png",
+          "selectedIconPath": "images/bar-icon/new-product-check.png"
+        },
+        {
+         "pagePath": "pages/me/me",
+          "text": "我的",
+          "iconPath": "images/bar-icon/my.png",
+          "selectedIconPath": "images/bar-icon/my-check.png"
+        }
+      ]
+    }
 }

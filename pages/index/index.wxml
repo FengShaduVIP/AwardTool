@@ -1,29 +1,20 @@
-<!--index.wxml-->
- <van-nav-bar
-    title="标题"
-    left-text="返回"
-    right-text="按钮"
-    left-arrow
-    bind:click-left="onClickLeft"
-    bind:click-right="onClickRight"
-  />
 <view class="container">
- 
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    <view wx:if="{{!hasUserInfo && canIUse}}" class='userinfo__container'>
+      <image class='userinfo__container__image' src="{{config.appSrc}}"></image>
+      <view class='userinfo__container__caption'>{{config.appCaption}}</view>
+
+      <view class='userinfo__container__block'>
+         <view>登录后开发者将获取以下权限</view>
+         <view class='userinfo__container__block__getInfo'>获取您公开信息（昵称、头像等）</view>
+      </view>
+
+      <button type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 确认登录 </button>
+    </view>
+    <!-- <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    </block> -->
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-
-  <van-tabbar active="{{ active }}" bind:change="onChange">
-    <van-tabbar-item icon="shop">标签</van-tabbar-item>
-    <van-tabbar-item icon="chat" dot>标签</van-tabbar-item>
-    <van-tabbar-item icon="records" info="5">标签</van-tabbar-item>
-    <van-tabbar-item icon="gold-coin" info="20">标签</van-tabbar-item>
-  </van-tabbar>
 </view>
