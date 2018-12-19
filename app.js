@@ -9,7 +9,8 @@ App({
     // 登录
     wx.login({
       success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res, 'res.code')
+        // 发送 res.code 到后台换取   
       }
     })
     // 获取用户信息
@@ -19,6 +20,7 @@ App({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
             success: res => {
+              console.log(res, 'res')
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
 
@@ -34,6 +36,10 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    config: {
+      appCaption: "猪猪抽奖",
+      appSrc: "../../images/抽奖.png"
+    }
   }
 })
