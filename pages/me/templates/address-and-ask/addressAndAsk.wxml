@@ -1,0 +1,9 @@
+<template name="addressAndAsk">
+<view class="address__and__ask">
+    <view>
+      <view></view>
+      <view>2</view>
+    </view>
+    <view></view>
+</view>
+</template>

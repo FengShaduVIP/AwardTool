@@ -1,0 +1,20 @@
+<template name="aboutMe">
+<view class="me__info">
+    <image class="me__info__avatar" src="{{avatarUrl}}"></image>
+    <text  class="me__info__name">{{nickName}}</text>
+    <view class='me__info__count'>
+      <view class='me__info__count__join'>
+        <view>0</view>
+        <view class='me__info__count__color__ADADAD'>我参与的</view>
+      </view>
+      <view class='me__info__count__create'>
+        <view>0</view>
+        <view class='me__info__count__color__ADADAD'>我发起的</view>
+      </view>
+      <view class='me__info__count__invite'>
+        <view>0</view>
+        <view class='me__info__count__color__ADADAD'>我邀请的</view>
+      </view>
+    </view>
+  </view>
+</template>

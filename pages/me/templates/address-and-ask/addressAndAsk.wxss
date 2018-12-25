@@ -1,0 +1,4 @@
+.address__and__ask {
+  background: #fff;
+  box-shadow: 0 0 2px 0px #CECECE;
+}

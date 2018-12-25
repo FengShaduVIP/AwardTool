@@ -16,5 +16,13 @@ Page({
       config: app.globalData.config,
       userInfo: app.globalData.userInfo
     })
+  },
+  onShow: function () {
+    if (app.globalData.userInfo) {
+      this.setData({
+        config: app.globalData.config,
+        userInfo: app.globalData.userInfo
+      })
+    }
   }
 })

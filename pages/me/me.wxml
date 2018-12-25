@@ -1,9 +1,10 @@
+<import src="./templates/about-me/aboutMe.wxml" />
+<import src="./templates/address-and-ask/addressAndAsk.wxml" />
 <view class="me">
-  <view class="me__info">
-    <image class="me__info__avatar" src="{{userInfo.avatarUrl}}"></image>
-    <text  class="me__info__name">{{userInfo.nickName}}</text>
-    <view class='me__info__count'>
-      aa
-    </view>
-  </view>
+   <!-- 关于我 -->
+   <view class="me__about">
+    <template is="aboutMe" data="{{...userInfo}}"></template>
+   </view>
+   <!-- 地址和客服 -->
+   <template is="addressAndAsk"></template>
 </view>

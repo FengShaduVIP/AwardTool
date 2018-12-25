@@ -1,0 +1,43 @@
+.me__info {
+  width: 100%;
+  background: #E89ABE;
+  height: 200rpx;
+  position: relative;
+  margin-bottom: 70rpx;
+}
+.me__info__avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 30rpx;
+  margin-right: 20rpx;
+}
+.me__info__name {
+  color: #fff;
+}
+.me__info__count {
+  width: 95%;
+  position: absolute;
+  background: #fff;
+  z-index: 9;
+  top: 140rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 30rpx 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.me__info__count > view{
+  width: 100%;
+  padding: 5rpx 0;
+}
+.me__info__count__create {
+  border-left: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
+}
+.me__info__count__color__ADADAD {
+  color: #ADADAD;
+}
